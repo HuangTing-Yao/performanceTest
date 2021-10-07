@@ -11,7 +11,7 @@ You need make sure that number of max user processes is larger than pid limit.
 * nproc hard nproc ${number2} 
 root nproc soft nproc ${number1}
 root nproc hard nproc ${number2}
-#change opening files in same time
+#change opening files same time
 * nproc soft nofile ${number1}
 * nproc hard nofile ${number2}   
 root nproc soft nofile ${number1}
