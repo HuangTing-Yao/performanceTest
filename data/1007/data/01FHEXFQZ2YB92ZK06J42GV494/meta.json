@@ -1,0 +1,17 @@
+{
+	"ulid": "01FHEXFQZ2YB92ZK06J42GV494",
+	"minTime": 1633651200120,
+	"maxTime": 1633658400000,
+	"stats": {
+		"numSamples": 35980,
+		"numSeries": 5,
+		"numChunks": 305
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01FHEXFQZ2YB92ZK06J42GV494"
+		]
+	},
+	"version": 1
+}

@@ -1,0 +1,17 @@
+{
+	"ulid": "01FHF4BF0P4VQF20VS191PWN2N",
+	"minTime": 1633658400255,
+	"maxTime": 1633665600000,
+	"stats": {
+		"numSamples": 35980,
+		"numSeries": 5,
+		"numChunks": 305
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01FHF4BF0P4VQF20VS191PWN2N"
+		]
+	},
+	"version": 1
+}
