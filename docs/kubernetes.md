@@ -7,7 +7,7 @@ Before you add worker into cluster, you can edit setting to increase max number 
 
 ##Change max and allocatable number of pod in node via kubelet
 1. modify kubelet start arg `--max-Pods=300`, you append this arg after `ExecStart` in `/etc/systemd/system/kubelet.service.d/10-kubeadm.conf`
-2. systemctl daemon-reload
-3. systemctl restart kubelet
+2. `systemctl daemon-reload`
+3. `systemctl restart kubelet`
 
 # simple docs for k8s, need to detail it 
