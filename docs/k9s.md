@@ -1,0 +1,1 @@
+# Install k9s to monitor resouce comsumption of yunikorn scheduler

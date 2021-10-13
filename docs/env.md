@@ -1,6 +1,6 @@
-#Experiment environment
+# Experiment environment
 
-##5k pods are assigned to 2k nodes.
+## 5k pods are assigned to 2k nodes.
 ```
 manchine type, cpu, memory, disk
 HP, 16, 36G, 292G
@@ -18,4 +18,4 @@ PRO E500 G6_WS720T, 16, 40G, 456G
 E500 G5, 8, 8G 117G
 E500 G5_870004Z, ?, 16G,? (promethous) 
 ```
-##5k pods are assigned to 4k nodes.
+## 5k pods are assigned to 4k nodes.
