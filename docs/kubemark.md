@@ -11,6 +11,8 @@
 2. create configmap `kubectl create configmap node-configmap -n kubemark --from-literal=content.type="test-cluster"`
 3. create secrets `kubectl create secret generic kubeconfig --type=Opaque --namespace=kubemark --from-file=kubelet.kubeconfig={kubeconfig_file_path} --from-file=kubeproxy.kubeconfig={kubeconfig_file_path}`
 4. `kubectl apply -f hollow-node-sts.yaml`
+5. use `kubectl cordon {node name}` to avoid containers in deployment are assigned to them. btw,use `kubectl uncordon {node name}` to disable it. 
+
 
 
 # simple docs need to detail it
