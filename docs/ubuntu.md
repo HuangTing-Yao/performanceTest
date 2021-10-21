@@ -7,15 +7,15 @@ You need make sure that number of max user processes is larger than pid limit.
 
 ``` 
 #change max process limitm number2 >= number1
-* nproc soft nproc ${number1}
-* nproc hard nproc ${number2} 
-root nproc soft nproc ${number1}
-root nproc hard nproc ${number2}
+* soft nproc ${number1}
+* hard nproc ${number2} 
+root soft nproc ${number1}
+root hard nproc ${number2}
 #change opening files same time
-* nproc soft nofile ${number1}
-* nproc hard nofile ${number2}   
-root nproc soft nofile ${number1}
-root nproc hard nofile ${number2}
+* soft nofile ${number1}
+* hard nofile ${number2}   
+root soft nofile ${number1}
+root hard nofile ${number2}
 ```
 3. `echo fs.inotify.max_user_instances=800000|sudo tee -a /etc/sysctl.conf && sudo sysctl -p`
 
