@@ -20,13 +20,13 @@ root hard nofile ${number2}
 ## Check kernel limits
 ```
 cat /proc/sys/kernel/pid_max
-cat /proc/sys/fs/inotify/max_uesr_instance
-cat /proc/sys/fs/inotify/max_uesr_watches
+cat /proc/sys/fs/inotify/max_user_instances
+cat /proc/sys/fs/inotify/max_user_watches
 ```
 
 ## modify kernal limits 
 ```
-sudo sysctl -w kernel.pid_max={pid limit number}
+sudo sysctl -w kernel.pid_max=500000
 sudo sysctl -w fs.inotify.max_user_instances=500000
 sudo sysctl -w fs.inotify.max_user_watches=500000
 ```
