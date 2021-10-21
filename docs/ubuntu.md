@@ -22,7 +22,7 @@ Use `cat /proc/sys/{limit path}` command to show pid limit.
 
 ## modify kernal limits 
 ```
-sysctl -w kernel.pid_max={pid limit number}
+sudo sysctl -w kernel.pid_max={pid limit number}
 sudo sysctl -w fs.inotify.max_user_instances=500000
 sudo sysctl -w fs.inotify.max_user_watches=500000
 ```
