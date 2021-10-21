@@ -17,8 +17,12 @@ root hard nproc ${number2}
 root soft nofile ${number1}
 root hard nofile ${number2}
 ```
-## Check and set pid limit
-Use `cat /proc/sys/{limit path}` command to show pid limit.
+## Check kernel limits
+```
+cat /proc/sys/kernel/pid_max
+cat /proc/sys/fs/inotify/max_uesr_instance
+cat /proc/sys/fs/inotify/max_uesr_watches
+```
 
 ## modify kernal limits 
 ```
