@@ -7,17 +7,26 @@ You need make sure that number of max user processes is larger than pid limit.
 
 ``` 
 #change max process limitm number2 >= number1
-* nproc soft nproc ${number1}
-* nproc hard nproc ${number2} 
-root nproc soft nproc ${number1}
-root nproc hard nproc ${number2}
+* soft nproc ${number1}
+* hard nproc ${number2} 
+root soft nproc ${number1}
+root hard nproc ${number2}
 #change opening files same time
-* nproc soft nofile ${number1}
-* nproc hard nofile ${number2}   
-root nproc soft nofile ${number1}
-root nproc hard nofile ${number2}
+* soft nofile ${number1}
+* hard nofile ${number2}   
+root soft nofile ${number1}
+root hard nofile ${number2}
+```
+## Check kernel limits
+```
+cat /proc/sys/kernel/pid_max
+cat /proc/sys/fs/inotify/max_user_instances
+cat /proc/sys/fs/inotify/max_user_watches
 ```
 
-## Check and set pid limit
-1. Use `cat /proc/sys/kernel/pid_max` command to show pid limit.
-2. If you want to increase pid limit, use `sysctl -w kernel.pid_max={pid limit number}` command to set it up.
+## modify kernal limits 
+```
+sudo sysctl -w kernel.pid_max=500000
+sudo sysctl -w fs.inotify.max_user_instances=500000
+sudo sysctl -w fs.inotify.max_user_watches=500000
+```
