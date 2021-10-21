@@ -17,13 +17,12 @@ root hard nproc ${number2}
 root soft nofile ${number1}
 root hard nofile ${number2}
 ```
-
 ## Check and set pid limit
-1. Use `cat /proc/sys/kernel/pid_max` command to show pid limit.
-2. If you want to increase pid limit, use `sysctl -w kernel.pid_max={pid limit number}` command to set it up
+Use `cat /proc/sys/{limit path}` command to show pid limit.
 
-## Other kernal limit 
+## modify kernal limits 
 ```
+sysctl -w kernel.pid_max={pid limit number}
 sudo sysctl -w fs.inotify.max_user_instances=500000
 sudo sysctl -w fs.inotify.max_user_watches=500000
 ```
