@@ -17,8 +17,13 @@ root hard nproc ${number2}
 root soft nofile ${number1}
 root hard nofile ${number2}
 ```
-3. `echo fs.inotify.max_user_instances=800000|sudo tee -a /etc/sysctl.conf && sudo sysctl -p`
 
 ## Check and set pid limit
 1. Use `cat /proc/sys/kernel/pid_max` command to show pid limit.
-2. If you want to increase pid limit, use `sysctl -w kernel.pid_max={pid limit number}` command to set it up.
+2. If you want to increase pid limit, use `sysctl -w kernel.pid_max={pid limit number}` command to set it up
+
+## Other kernal limit 
+```
+sudo sysctl -w fs.inotify.max_user_instances=500000
+sudo sysctl -w fs.inotify.max_user_watches=500000
+```
