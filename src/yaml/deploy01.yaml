@@ -1,0 +1,23 @@
+kind: Deployment
+metadata: 
+  name: deploy1
+  labels:
+    app: nginx
+spec:
+  replicas: 5000
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+        applicationId: "deploy1"
+        queue: root.sandbox
+    spec:
+      schedulerName: yunikorn
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
