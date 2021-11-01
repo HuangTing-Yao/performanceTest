@@ -1,4 +1,4 @@
-# PodstartTime vs prometheus time
+# 50k pod in n deployments:PodstartTime vs prometheus time
 ```
 deployment:        |  1  |  5   |  20  |  50  |  number
 -------------------------------------------------------
