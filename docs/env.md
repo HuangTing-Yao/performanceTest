@@ -1,41 +1,24 @@
 # Experiment environment
+```
+manchine type: (cpu, memory, disk, download/upload)
+ProLiant DL360 G6:	(16,	36G,	268G,	525.74/509.86)
+ProLiant DL360 G6:	(16,	30G,	134G,	564.87/461.82)
+ProLiant DL360 G6:	(16,	36G,	268G,	431.06/511.69)
+ProLiant DL360p Gen8:	(24,	32G,	274G,	557.31/576.21)
+IBM System x 7878B3V:	(16,	38G,	272G,	432.11/4.15)
+IBM System x 7878B3V:	(16,	36G,	134G,	714.84/4.14)
+BladeCenter HS22 7870IVH:	(16,	42G,	273G,	458.38/4.13)
+IBM System x 7878B3V:	(16,	42G,	133G,	445.42/4.13)
+IBM System x 7878B3V:	(16,	32G,	134G,	400.59/4.13)
+IBM System x 7870C4M:	(16,	12G,	133G,	499.87/4.13)
+BladeCenter HS23 7875AC1:	(8,	32G,	273G,	468.51/4.14)
+WS E900 G4_WS980T:	(80,	512G,	916G,	89.24/87.97)
+WS660T:	(8,	16G,	916G,	87.73/86.30)
+E500 G5:	(8,	8G,	117G,	91.34/85.84)
+WS E500 G5_WS690T	(12,	16G, 	92.2/93.76)
+WS E500 G5_WS690T:	(8, 32G,	1.8T,	91/89.41)
+WS E500 G6_WS720T:	(8, 40G,	456G,	92.61/89.78)
+Pro E500 G6_WS720T:	(16,	8G,	228G,	90/87.18)
+ASUSPRO D640MB_M640SA: (4, 8G, 92.43/93.77)
 
-## 5k pods are assigned to 2k nodes.
-```
-manchine type, cpu, memory, disk
-HP, 16, 36G, 292G
-HP, 16, 30G, 292G
-HP, 16, 30G, 292G
-HP, 24, 32G, 300G
-IBM blade H22, 16, 26G, 300G
-IBM blade H22, 16, 42G, 446G
-IBM blade H22, 16, 25G, 292G
-IBM blade H22, 16, 2G, 126G
-IBM blade H23, 8, 32G, 300G
-WS66OT, 8, 16G, 916G
-PRO E500 G6 ,16, 8G
-PRO E500 G6_WS720T, 16, 40G, 456G
-E500 G5, 8, 8G 117G
-E500 G5_870004Z, ?, 16G,? (promethous) 
-```
-## 5k pods are assigned to 4k nodes.
-```
-manchine type, cpu, memory, disk
-HP, 16, 36G, 292G
-HP, 16, 30G, 292G
-HP, 16, 30G, 292G
-HP, 24, 32G, 300G
-IBM blade H22, 16, 26G, 300G
-IBM blade H22, 16, 42G, 446G
-IBM blade H22, 16, 25G, 292G
-IBM blade H22, 16, 2G, 126G
-IBM blade H23, 8, 32G, 300G
-WS66OT, 8, 16G, 916G
-PRO E500 G6 ,16, 8G
-PRO E500 G6_WS720T, 16, 40G, 456G
-E500 G5, 8, 8G 117G
-E500 G5_870004Z, ?, 16G,? (promethous) 
-WD E500 G5_WS690T, 8, 32G,  1.8T
-WS E900 G4_WS980T , 80, 512G, 916G
-ESC4000 G4, 40, 125g, 938G
 ```
