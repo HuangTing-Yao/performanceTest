@@ -1,0 +1,23 @@
+[
+ {
+  "CaseName": "yunikorn",
+  "Context": {
+   "Throughput": 359,
+   "TimeCost": 139
+  }
+ },
+ {
+  "CaseName": "predicate",
+  "Context": {
+   "Throughput": 125,
+   "TimeCost": 399
+  }
+ },
+ {
+  "CaseName": "",
+  "Context": {
+   "Throughput": 48,
+   "TimeCost": 1030
+  }
+ }
+]
