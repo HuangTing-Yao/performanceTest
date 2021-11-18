@@ -1,4 +1,4 @@
-# Result
+# Throughput
 ```
 scheduler    |              yunikorn             |   k8s  default scheduler   
 predicate    |     inactive    |      active     |
